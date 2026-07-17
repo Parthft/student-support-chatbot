@@ -1,0 +1,51 @@
+:root {
+  --bg: #eaf3ee;
+  --surface: #ffffff;
+  --ink: #1f2a24;
+  --muted: #64766c;
+  --primary: #1b3a3a;
+  --primary-light: #2f5c56;
+  --accent: #d9a441;
+  --accent-soft: #f3e3c2;
+  --danger: #b5533c;
+  --border: #dbe6df;
+  --radius-lg: 20px;
+  --radius-md: 14px;
+  --radius-sm: 9px;
+  --font-display: "Fraunces", Georgia, serif;
+  --font-body: "Inter", system-ui, sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body,
+#root {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--ink);
+  font-family: var(--font-body);
+  -webkit-font-smoothing: antialiased;
+}
+
+button {
+  font-family: inherit;
+}
+
+::selection {
+  background: var(--accent-soft);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+  }
+}
