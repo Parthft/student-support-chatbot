@@ -147,6 +147,37 @@
   border-bottom-left-radius: 4px;
 }
 
+.bubble.assistant p {
+  margin: 0 0 8px;
+}
+
+.bubble.assistant p:last-child {
+  margin-bottom: 0;
+}
+
+.bubble.assistant ul,
+.bubble.assistant ol {
+  margin: 0 0 8px;
+  padding-left: 20px;
+}
+
+.bubble.assistant li {
+  margin-bottom: 4px;
+}
+
+.bubble.assistant li:last-child {
+  margin-bottom: 0;
+}
+
+.bubble.assistant strong {
+  font-weight: 700;
+}
+
+.bubble.assistant a {
+  color: var(--primary);
+  text-decoration: underline;
+}
+
 .bubble.user {
   background: var(--primary);
   color: #fff;

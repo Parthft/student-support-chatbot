@@ -1,4 +1,5 @@
 import { useEffect, useRef, useState } from "react";
+import ReactMarkdown from "react-markdown";
 import "./App.css";
 
 const API_URL = import.meta.env.VITE_API_URL || "http://localhost:8000";
@@ -141,7 +142,13 @@ export default function App() {
                   <span className="pulse-dot" aria-hidden="true" />
                 </div>
               )}
-              <div className={`bubble ${m.role}`}>{m.content}</div>
+              <div className={`bubble ${m.role}`}>
+                {m.role === "assistant" ? (
+                  <ReactMarkdown>{m.content}</ReactMarkdown>
+                ) : (
+                  m.content
+                )}
+              </div>
             </div>
           ))}
           {isSending && (
