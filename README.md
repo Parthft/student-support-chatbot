@@ -37,9 +37,9 @@ GEMINI_API_KEY=AIza...
 CORS_ORIGINS=http://localhost:5173
 ```
 
-This uses `gemini-2.5-flash` by default, which is on Google's free tier.
+This uses `gemini-flash-latest` by default, which is on Google's free tier.
 You can override the model via a `GEMINI_MODEL` env var (e.g.
-`gemini-2.5-flash-lite` for higher rate limits at slightly lower quality).
+`gemini-3.1-flash-lite` for higher rate limits at slightly lower quality).
 
 Run it:
 
